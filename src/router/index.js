@@ -1,14 +1,25 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../components/Login.vue' // 导入login文件
-import Home from '../components/Home.vue' // 导入login文件
+import Login from '../components/Login.vue'
+import Home from '../components/Home.vue'
+import Welcome from '../components/Welcome.vue'
+// user区
+import User from '../components/user/User.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', redirect: '/login' }, // 重定向，打开页面立刻转到login页
   { path: '/login', component: Login },
-  { path: '/home', component: Home }
+  {
+    path: '/home',
+    component: Home,
+    redirect: '/welcome',
+    children: [
+      { path: '/Welcome', component: Welcome },
+      { path: '/users', component: User }
+    ]
+  }
 ]
 
 const router = new VueRouter({
