@@ -1,5 +1,5 @@
 <template>
-  <el-container class="home-container">
+  <el-container>
     <!-- 头部区域 -->
     <el-header>
       <div>
@@ -27,8 +27,7 @@
         :collapse="isCollapse"
         :collapse-transition="false"
         router
-        :default-active="activePath"
-        >
+        :default-active="activePath">
           <!-- 一级菜单 -->
           <!-- index不接受数值，但是item.id是数值，所以需要数值 + '' = 字符串 -->
           <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
@@ -43,8 +42,7 @@
             <el-menu-item :index="'/' + subItem.path + ''"
             v-for="subItem in item.children"
             :key="subItem.id"
-            @click="saveNavState('/' + subItem.path)"
-            >
+            @click="saveNavState('/' + subItem.path)">
               <!--二级菜单的模板区域 -->
                 <template slot="title">
                 <!-- 图标 -->
@@ -116,8 +114,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.home-container {
-  height: 100%;
+.el-container {
+  height: 95%;
 
   .el-header {
     background-color: #373d41;

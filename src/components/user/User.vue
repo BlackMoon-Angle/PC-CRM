@@ -36,12 +36,12 @@
         <el-table-column label="操作" width="180px">
           <template slot-scope="scope">
             <!-- 修改按钮 -->
-            <el-tooltip effect="dark" content="删除" placement="top" :enterable="false">
+            <el-tooltip effect="dark" content="修改" placement="top" :enterable="false">
               <el-button type="primary" icon="el-icon-edit" size="mini" @click="showEditDialog(scope.row.id)"></el-button>
             </el-tooltip>
             <!-- 删除按钮 -->
-            <el-tooltip effect="dark" content="修改" placement="top" :enterable="false">
-              <el-button type="danger" icon="el-icon-delete" size="mini"></el-button>
+            <el-tooltip effect="dark" content="删除" placement="top" :enterable="false">
+              <el-button type="danger" icon="el-icon-delete" size="mini" @click="removeUserById(scope.row.id)"></el-button>
             </el-tooltip>
             <!-- 分配按钮 -->
             <el-tooltip effect="dark" content="分配角色" placement="top" :enterable="false">
@@ -318,6 +318,33 @@ export default {
         this.getUserList()
         // 提示修改成功
         this.$message.success('更新用户信息成功！')
+      })
+    },
+    // 根据 id 删除对应的用户信息
+    async removeUserById(id) {
+      // 询问是否删除数据
+      this.$confirm('此操作将永久删除该用户信息?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(async () => {
+        const { data: res } = await this.$http.delete('users/' + id)
+        if (res.meta.status !== 200) {
+          return this.$message.error('删除用户信息失败！')
+        }
+        this.$message.closeAll()
+        this.$message({
+          type: 'success',
+          message: '删除成功！'
+        })
+        // 删除成功后重新渲染列表
+        this.getUserList()
+      }).catch(() => {
+        this.$message.closeAll()
+        this.$message({
+          type: 'info',
+          message: '已取消删除！'
+        })
       })
     }
   }
