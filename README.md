@@ -34,28 +34,28 @@
 
 ### 				用户列表：
 
-![](.\图片\用户列表.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8.png)
 
 ### 				权限列表：
 
-![](.\图片\权限列表.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E6%9D%83%E9%99%90%E5%88%97%E8%A1%A8.png)
 
 ### 				商品列表：
 
-![](.\图片\商品列表.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8.png)
 
 ### 				分类参数：
 
-![](.\图片\分类参数.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E5%88%86%E7%B1%BB%E5%8F%82%E6%95%B0.png)
 
 ### 				商品分类：
 
-![](.\图片\商品分类.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E5%95%86%E5%93%81%E5%88%86%E7%B1%BB.png)
 
 ### 				订单列表：
 
-![](.\图片\订单列表.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E8%AE%A2%E5%8D%95%E5%88%97%E8%A1%A8.png)
 
 ### 				数据报表：
 
-![](.\图片\数据统计.png)
+![](https://gitee.com/BlackMoon_kaka/image-warehouse/raw/master/image/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1.png)
