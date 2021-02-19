@@ -1,31 +1,61 @@
-git status                  ——检查当前工作区是否干净
-git checkout -b 分支的名字   ——创建分支
-git branch                  ——查看当前项目所有分支(打上 * 的表示处在的分支)
-git checkout 分支名字        ——切换分支
-git merge 分支名字           ——指定某一分支合并到当前分支
-git branch -d 分支名字       ——删除本地分支
-git push origin --delete 分支名字       ——删除远程分支
-# vue_crm
+# 电商后台管理系统
 
-## Project setup
-```
-npm install
-```
+## 技术栈：Vue + VueRouter + Axios + Element UI + NodeJs + MySQL
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 主要功能：
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 				用户管理
 
-### Lints and fixes files
-```
-npm run lint
-```
+​						用户列表
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 				权限管理
+
+​						角色列表
+
+​						权限列表
+
+### 				商品管理
+
+​						商品列表
+
+​						分类参数
+
+​						商品分类
+
+### 				订单管理
+
+​						订单列表
+
+### 				数据统计
+
+​						数据列表
+
+## 部分页面展示：
+
+### 				用户列表：
+
+![](.\图片\用户列表.png)
+
+### 				权限列表：
+
+![](.\图片\权限列表.png)
+
+### 				商品列表：
+
+![](.\图片\商品列表.png)
+
+### 				分类参数：
+
+![](.\图片\分类参数.png)
+
+### 				商品分类：
+
+![](.\图片\商品分类.png)
+
+### 				订单列表：
+
+![](.\图片\订单列表.png)
+
+### 				数据报表：
+
+![](.\图片\数据统计.png)
